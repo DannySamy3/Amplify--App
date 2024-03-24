@@ -1,10 +1,5 @@
-import "./App.css";
 import logo from "./logo.svg";
-
 import "@aws-amplify/ui-react/styles.css";
-import { Amplify } from "aws-amplify";
-import config from "./aws-exports";
-
 import {
   withAuthenticator,
   Button,
@@ -13,7 +8,6 @@ import {
   View,
   Card,
 } from "@aws-amplify/ui-react";
-Amplify.configure(config);
 
 function App({ signOut }) {
   return (
